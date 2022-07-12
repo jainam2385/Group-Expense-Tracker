@@ -1,0 +1,39 @@
+Sample Test Case
+
+a) Create a Group- (FEATURE 1)
+Link-http://127.0.0.1:5000/groups/1
+{
+    "name": "Trip",
+    "members": ["A","B"]
+}
+ 
+b) Add Expense (FEATURE 1 and 2)
+Link-http://127.0.0.1:5000/addexpense/1
+{
+    "name": "Breakfast",
+    "value": 500 ,
+    "paid_by": {"A":300,"B":200},
+    "paid_for": {"A":100,"B":200,"C":200}
+}
+
+{
+    "name": "Lunch",
+    "value": 1000 ,
+    "paid_by": {"D":400,"C":300,"A":300},
+    "paid_for": {"D":300,"B":400,"C":200,"A":100}
+}
+
+c) Update Expense (FEATURE 3)
+http://127.0.0.1:5000/updateexpense/1/Lunch
+{
+    "name": "Lunch",
+    "value": 800 ,
+    "paid_by": {"D":300,"C":300,"A":200},
+    "paid_for": {"D":300,"B":400,"A":100}
+}
+
+d) Delete Expense (FEATURE 4)
+Link- http://127.0.0.1:5000/deleteexpense/1/Lunch
+
+c) View Balance (FEATURE 5)
+Link-http://127.0.0.1:5000/balance/1
