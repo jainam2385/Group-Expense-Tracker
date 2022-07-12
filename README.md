@@ -51,7 +51,7 @@ Update Link-
 http://127.0.0.1:5000/updateexpense/<int:groupId>/<string:ExpenseName>
 `
 
-JSON Structure <br>
+JSON Structure
 `
   {
     "name": "",
